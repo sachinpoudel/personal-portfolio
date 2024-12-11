@@ -22,13 +22,78 @@ span{
     color: yellow;
     font-weight: bold;
 }
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveRightToLeft 5s linear infinite; /* 5s duration, continuous */
+  }
+  
+  @keyframes moveRightToLeft {
+    from {
+      transform: translateX(100%); /* Start from the right */
+    }
+    to {
+      transform: translateX(-100%); /* End at the left */
+    }
+  }
+  
 p{
     color: aquamarine;
     margin-top: 2rem;
 }
+h3 {
+    font-size: 24px;
+    color: antiquewhite;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  h3:active {
+    transform: scale(1.1);
+  }
+  p:active {
+    transform: scale(1.1);
+  }
+  h3:hover {
+    color: #007BFF; /* Change the color on hover */
+    transform: scale(1.1); /* Slightly enlarge the heading */
+  }
+  
+  p {
+    font-size: 16px;
+    color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  p:hover {
+    transform: translateY(-10px); /* Move the paragraph slightly upwards */
+    opacity: 0.8; /* Make it slightly transparent */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#081b29;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
 @media only screen and (max-width: 600px) {
     .header ,h3,h2{
         font-size: 30px;
+        transition: color 0.3s ease, transform 0.3s ease;
+      
     }
     p{
         font-size: 15px;
