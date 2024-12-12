@@ -23,19 +23,28 @@ span{
     font-weight: bold;
 }
 .moving-text {
-    display: inline-block;
-    white-space: nowrap;
-    animation: moveRightToLeft 5s linear infinite; /* 5s duration, continuous */
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveRightToLeft 5s linear infinite;
+  position: relative; /* Ensure it can move relative to its container */
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%); /* Start off-screen from the right */
+    opacity: 0; /* Invisible at the start */
   }
-  
-  @keyframes moveRightToLeft {
-    from {
-      transform: translateX(100%); /* Start from the right */
-    }
-    to {
-      transform: translateX(-100%); /* End at the left */
-    }
+  10% {
+    opacity: 1; /* Fully visible as it starts entering */
   }
+  90% {
+    opacity: 1; /* Fully visible while in the viewport */
+  }
+  100% {
+    transform: translateX(-100%); /* Move off-screen to the left */
+    opacity: 0; /* Invisible again */
+  }
+}
   
 p{
     color: aquamarine;
