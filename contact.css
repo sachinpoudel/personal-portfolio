@@ -1,0 +1,242 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+}
+
+:root {
+  --bg-color: #dfd2d2;
+  --snd-bg-color: #d5fdf9;
+  --text-color: #000;
+  --main-color: #007f73;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    /* Your portfolio's main color */
+}
+
+h2 {
+    color: var(--main-color);
+    /* Your portfolio's main color */
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+button {
+    background-color: var(--main-color);
+    /* Your portfolio's main color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005bb5;
+    /* Darker shade of your portfolio color */
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+    /* background-color: var(--main-color); */
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.contact-details p {
+    margin-top: 1rem;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--main-color);
+    /* Your portfolio's main color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 5px solid var(--main-color);
+    /* Darker shade of your portfolio color */
+}
+
+.footer .social-media a {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.footer .social-media a:hover {
+    text-decoration: underline;
+}
+ 
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem 5%;
+  background: var(--main-color);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+}
+
+
+
+/* home section code */
+.navbar a {
+  font-size: 1.3rem;
+  color: var(--bg-color);
+  margin-left: 4rem;
+  font-weight: 700;
+  transition: 0.3s ease;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--text-color);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--bg-color);
+  display: none;
+}
+
+@media(max-width:991px) {
+
+  #menu-icon {
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 255px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--main-color);
+      transition: all 0.5s ease;
+      backdrop-filter: blur(10px);
+  }
+
+  .navbar a {
+      display: block;
+      padding: 17px;
+      font-size: 20px;
+  }
+
+  .navbar.active {
+      right: 0;
+  }
+}
+
+@media(max-width:991px) {
+
+  #menu-icon {
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 255px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--main-color);
+      transition: all 0.5s ease;
+      backdrop-filter: blur(10px);
+  }
+
+  .navbar a {
+      display: block;
+      padding: 17px;
+      font-size: 20px;
+  }
+
+  .navbar.active {
+      right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  
+ 
+
+  #menu-icon {
+      display: block;
+      font-size: 1.7rem;
+  }
+.header{
+  background: var(--main-color);
+}
+  .navbar {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      width: 255px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--main-color);
+      transition: all 0.5s ease;
+      backdrop-filter: blur(10px);
+  }
+
+  .navbar a {
+      display: block;
+      padding: 17px;
+      font-size: 20px;
+  }
+
+  .navbar.active {
+      right: 0;
+  }
+}
