@@ -194,10 +194,7 @@ a .letconnect{
     box-shadow: 0 0 25px var(--main-color);
 }
 
-.yeti p {
-    color: var(--text-color);
-    font-weight: bold;
-}
+
 
 @media(max-width:1200px) {
     html {
