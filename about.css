@@ -160,8 +160,8 @@ box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var
     font-weight: bold;
 }
 
-#read-more-btn:hover,#read-more-btn:active {
-    box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var(--main-color);
+/* #read-more-btn:hover,#read-more-btn:active {
+    box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var(--main-color); */
 
 
 }
