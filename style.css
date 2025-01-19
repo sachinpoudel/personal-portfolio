@@ -65,6 +65,7 @@ section {
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s ease;
+    font-family:'Lato';
 }
 
 .logo:hover {
