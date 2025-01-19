@@ -282,11 +282,12 @@ article .icon {
   margin-left: 4rem;
   font-weight: 700;
   transition: 0.3s ease;
+  font-family: 'Lato';
 
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a:active {
   color: var(--text-color);
 }
 
