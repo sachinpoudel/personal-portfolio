@@ -191,6 +191,7 @@ box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var
     margin-left: 4rem;
     font-weight: 700;
     transition: 0.3s ease;
+    font-family: 'Lato';
 
 }
 
