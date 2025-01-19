@@ -160,7 +160,7 @@ box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var
     font-weight: bold;
 }
 
-#read-more-btn:hover,#read-more-btn:active {
+#read-more-btn:hover, #read-more-btn:active {
     box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var(--main-color);
 
 
@@ -195,7 +195,7 @@ box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var
 }
 
 .navbar a:hover,
-.navbar a.active {
+.navbar a:active {
     color: var(--text-color);
 }
 
@@ -262,7 +262,7 @@ box-shadow: 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 45px var
         font-size: 22px;
     }
 
-    .navbar.active {
+    .navbar:active {
         right: 0;
     }
 }
