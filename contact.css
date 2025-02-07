@@ -12,7 +12,7 @@
   --bg-color: #dfd2d2;
   --snd-bg-color: #d5fdf9;
   --text-color: #000;
-  --main-color: #334155;
+  --main-color: #007f73;
 }
 /* :root{
     --bg-color: #000000;
@@ -104,6 +104,7 @@ button:hover {
     text-align: center;
     margin-top: 50px;
     border-top: 5px solid var(--main-color);
+    bottom: 0;
     /* Darker shade of your portfolio color */
 }
 
