@@ -13,7 +13,7 @@
   --bg-color: #dfd2d2;
   --snd-bg-color: #d5fdf9;
   --text-color: #000;
-  --main-color: #334155;
+  --main-color: #007f73;
 }
 body{
   background: var(--bg-color);
