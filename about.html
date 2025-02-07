@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home"></a>
+    
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+    
+        </nav>
+    </header>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic (10).png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Hi, I’m Sachin Poudel, a passionate Computer Science enthusiast from the beautiful, remote
+                        village of Ilam, Nepal. My journey in technology began when I enrolled in +2 Science at Devi
+                        Ma.Vi Birtamod, where I first discovered the fascinating world of computer science and
+                        programming. Balancing my studies and curiosity, I managed to learn the basics of web
+                        development during my time in Class 12.<br>
+                        <span id="more-text" style="display: none;">
+                        Currently, I’m pursuing a B.Sc. CSIT degree at Tribhuvan University, delving deeper into the
+                        realms of programming, web development, and emerging technologies. While I may not have a solid
+                        professional skill set yet, I’ve built a foundation in HTML, CSS, and JavaScript and am actively
+                        working on personal projects to enhance my technical capabilities.<br>
+                        Beyond coding, I enjoy staying updated on the latest tech trends, innovations in AI, and
+                        advancements by global leaders like Samsung and Apple. .<br>
+
+                        As I continue to grow in this field, I aim to combine my technical knowledge and creativity to
+                        make meaningful contributions to the world of technology.<br>
+
+                        Let’s connect and explore this exciting journey together! 🚀</span>
+
+                        <button id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><span
+                                style="color: var(--text-color);font-weight: 700;">Skills</span></p>
+                        <p class="tab-links exp-link" onclick="opentab('experince')"><span
+                                style="color: var(--text-color);font-weight: 700;">Experience</span></p>
+                        <p class=" tab-links edu-link" onclick="opentab('education')"><span
+                                style="color: var(--text-color); font-weight:700;">Education</span></p>
+
+                    </div>
+                    <div class=" tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span style="color: var(--main-color);font-weight: 700;">Web dev</span><br>I have a good foundation in web development, with proficiency
+                                in HTML, CSS, and JavaScript. I successfully completed the JavaScript course on
+                                freeCodeCamp.org and have built several front-end projects that showcase my skills and
+                                creativity. These experiences have boosted my confidence in developing responsive and
+                                interactive web applications, and I’m eager to take on more challenging projects as I
+                                continue to grow in this field</li>
+                            <li><span style="color: var(--main-color); font-weight:700;">C- Programming</span><br> I know the Fundamentals of c language nothing much than that.</li>
+                         
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        I’m currently pursuing a Computer Science degree and building my skills in web development,
+                        machine learning, and emerging technologies. While I don’t have a kind of experience yet, I’m
+                        actively learning and working on projects to gain hands-on experience. I’m excited to grow and
+                        contribute meaningfully to the tech world.
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span style="color: var(--main-color);">2066-2078</span><br>Schooling(Nursury-10) at
+                                Ilam Shuva Kanya English School.
+                                Maijogmai-1,Nayabazar</li>
+                            <li><span style="color: var(--main-color);">2079-2080</span><br>+2 science at Devi Sec.
+                                School,Btm-Jhapa</li>
+                            <li><span style="color: var(--main-color);">2081-Now</span><br>Pursuing BSC.Csit at TU.</li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+        function toggleReadMore() {
+            const moreText = document.getElementById("more-text");
+            const btnText = document.getElementById("read-more-btn");
+          
+            if (moreText.style.display === "none") {
+              moreText.style.display = "inline";
+              btnText.textContent = "Read Less";
+            } else {
+              moreText.style.display = "none";
+              btnText.textContent = "Read More";
+            }
+          }
+          
+    </script>
+    <script src="script.js"></script>
+    <!-- <script>
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+    
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll = () => {
+            menu.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        }
+    </script> -->
+    <script src="https://kit.fontawesome.com/f1e4fdeaa1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
