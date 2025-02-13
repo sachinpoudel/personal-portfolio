@@ -272,7 +272,7 @@ article .icon {
   background: var(--main-color);
   backdrop-filter: blur(10px);
   transition: all 0.5s ease;
-  height: 4rem;
+  
 }
 
 
@@ -372,6 +372,8 @@ article .icon {
 
   #menu-icon {
     display: block;
+       padding-top: 1rem;
+        padding-right: 1rem;
   }
 
   .navbar {
